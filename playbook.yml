@@ -7,7 +7,7 @@
   - name: Start docker
     service: name=docker state=started
 
-  - name: create docker image using war file
+  - name: create docker image using php file
     command: docker build -t myphp:CICD .
     args:
       chdir: /opt/myphp
